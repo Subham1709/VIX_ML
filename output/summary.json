@@ -1,0 +1,571 @@
+{
+ "period": {
+  "start": "2020-01-02",
+  "end": "2026-04-13",
+  "days": 1536
+ },
+ "performance": [
+  {
+   "strategy": "Unhedged",
+   "final": 1.941236098701969,
+   "CAGR": 11.144443139087535,
+   "vol": 18.279073622554556,
+   "sharpe": 0.25408525809298965,
+   "maxDD": -38.43985245274211,
+   "worst_21d": -37.239712063907625,
+   "puts_bought": 0,
+   "premium_paid_pa": 0.0,
+   "net_cost_pa": 0.0,
+   "hedged_pct": 0.0,
+   "buy_months_pct": 0.0,
+   "group": "Reference"
+  },
+  {
+   "strategy": "Original rule: buy when VIX < 13",
+   "final": 2.258814100889937,
+   "CAGR": 13.871150428694023,
+   "vol": 15.395014729713344,
+   "sharpe": 0.47880112868403046,
+   "maxDD": -21.950852924482835,
+   "worst_21d": -19.484253802465535,
+   "puts_bought": 22,
+   "premium_paid_pa": 2.9102276430563814,
+   "net_cost_pa": -2.1799858555861604,
+   "hedged_pct": 45.3125,
+   "buy_months_pct": 28.947368421052634,
+   "group": "Reference"
+  },
+  {
+   "strategy": "Buy every month",
+   "final": 1.6994632998833668,
+   "CAGR": 8.825471200219903,
+   "vol": 13.588820468593992,
+   "sharpe": 0.1711312034473081,
+   "maxDD": -25.471040051117733,
+   "worst_21d": -23.513103829020597,
+   "puts_bought": 73,
+   "premium_paid_pa": 20.176619115925035,
+   "net_cost_pa": 2.238066697580403,
+   "hedged_pct": 94.27083333333334,
+   "buy_months_pct": 100.0,
+   "group": "Reference"
+  },
+  {
+   "strategy": "Gradient boosting: insurance looks cheap",
+   "final": 2.2280124657095506,
+   "CAGR": 13.610768668983496,
+   "vol": 16.0853089156861,
+   "sharpe": 0.44206603095133634,
+   "maxDD": -24.86670565228952,
+   "worst_21d": -22.124012616367615,
+   "puts_bought": 9,
+   "premium_paid_pa": 1.6801607134077563,
+   "net_cost_pa": -2.034273917829145,
+   "hedged_pct": 26.171875,
+   "buy_months_pct": 11.842105263157894,
+   "group": "Machine learning"
+  },
+  {
+   "strategy": "LSTM: insurance looks cheap",
+   "final": 1.9275104703452601,
+   "CAGR": 11.018891529255326,
+   "vol": 18.108590790043277,
+   "sharpe": 0.24954407450302354,
+   "maxDD": -38.43985245274211,
+   "worst_21d": -37.239712063907625,
+   "puts_bought": 5,
+   "premium_paid_pa": 0.9374390735964697,
+   "net_cost_pa": 0.12290762917512596,
+   "hedged_pct": 17.3828125,
+   "buy_months_pct": 6.578947368421052,
+   "group": "Machine learning"
+  },
+  {
+   "strategy": "Gradient boosting: fall risk above normal",
+   "final": 1.6310319449940731,
+   "CAGR": 8.104298726329562,
+   "vol": 16.45089458893105,
+   "sharpe": 0.09752045505227483,
+   "maxDD": -38.43985245274211,
+   "worst_21d": -37.239712063907625,
+   "puts_bought": 33,
+   "premium_paid_pa": 10.771460795680094,
+   "net_cost_pa": 2.773468907569003,
+   "hedged_pct": 64.51822916666666,
+   "buy_months_pct": 43.42105263157895,
+   "group": "Machine learning"
+  },
+  {
+   "strategy": "LSTM: fall risk above normal",
+   "final": 1.793411952459188,
+   "CAGR": 9.750998172099301,
+   "vol": 14.932869411024493,
+   "sharpe": 0.21770753380453362,
+   "maxDD": -27.340594570714003,
+   "worst_21d": -25.59492890541585,
+   "puts_bought": 34,
+   "premium_paid_pa": 11.769534608295007,
+   "net_cost_pa": 1.3675837597757294,
+   "hedged_pct": 53.450520833333336,
+   "buy_months_pct": 46.05263157894737,
+   "group": "Machine learning"
+  },
+  {
+   "strategy": "VIX < 13 or LSTM insurance cheap",
+   "final": 2.294777377384964,
+   "CAGR": 14.158024021130133,
+   "vol": 15.293892426379992,
+   "sharpe": 0.500724328877914,
+   "maxDD": -21.950852924482835,
+   "worst_21d": -19.484253802465535,
+   "puts_bought": 25,
+   "premium_paid_pa": 3.5951393971690853,
+   "net_cost_pa": -2.41952804762637,
+   "hedged_pct": 50.911458333333336,
+   "buy_months_pct": 32.89473684210527,
+   "group": "Combined"
+  }
+ ],
+ "subperiods": [
+  {
+   "from": "2020-07-01",
+   "strategy": "Unhedged",
+   "CAGR": 15.371188885246978,
+   "vol": 14.565153350049172,
+   "maxDD": -17.22975608467007,
+   "sharpe": 0.6090693775783025
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "Original rule: buy when VIX < 13",
+   "CAGR": 14.8543012631571,
+   "vol": 13.609699038699787,
+   "maxDD": -17.229864895121594,
+   "sharpe": 0.613849082143644
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "Buy every month",
+   "CAGR": 11.354013841326193,
+   "vol": 11.259606626573644,
+   "maxDD": -14.659119773001372,
+   "sharpe": 0.43109977127178684
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "Gradient boosting: insurance looks cheap",
+   "CAGR": 15.349281435432927,
+   "vol": 14.167794659954625,
+   "maxDD": -17.229756084670058,
+   "sharpe": 0.6246054271555392
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "LSTM: insurance looks cheap",
+   "CAGR": 15.229700428214299,
+   "vol": 14.332239474113987,
+   "maxDD": -17.22975608467008,
+   "sharpe": 0.6090953506590054
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "Gradient boosting: fall risk above normal",
+   "CAGR": 13.16144106122068,
+   "vol": 12.376160064092655,
+   "maxDD": -15.181809374299448,
+   "sharpe": 0.5382478108494839
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "LSTM: fall risk above normal",
+   "CAGR": 12.07996971204257,
+   "vol": 12.493074604540398,
+   "maxDD": -17.042381691601637,
+   "sharpe": 0.4466450324417837
+  },
+  {
+   "from": "2020-07-01",
+   "strategy": "VIX < 13 or LSTM insurance cheap",
+   "CAGR": 15.168483128017751,
+   "vol": 13.485306296530942,
+   "maxDD": -17.229864895121594,
+   "sharpe": 0.6428095096547933
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "Unhedged",
+   "CAGR": 7.324950265428853,
+   "vol": 14.032294159180061,
+   "maxDD": -16.465934060306942,
+   "sharpe": 0.05878940792366178
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "Original rule: buy when VIX < 13",
+   "CAGR": 7.060536679998219,
+   "vol": 12.709090231033738,
+   "maxDD": -16.46593406030693,
+   "sharpe": 0.04410517746026153
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "Buy every month",
+   "CAGR": 5.6728089293150985,
+   "vol": 10.487002977466561,
+   "maxDD": -14.659119773001382,
+   "sharpe": -0.07887773775427435
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "Gradient boosting: insurance looks cheap",
+   "CAGR": 7.544965842459006,
+   "vol": 13.499183367110081,
+   "maxDD": -16.46593406030693,
+   "sharpe": 0.07740955982604103
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "LSTM: insurance looks cheap",
+   "CAGR": 7.361099181498054,
+   "vol": 13.762165824109415,
+   "maxDD": -16.465934060306942,
+   "sharpe": 0.06257003385248615
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "Gradient boosting: fall risk above normal",
+   "CAGR": 6.829594311664122,
+   "vol": 11.609593978841305,
+   "maxDD": -15.181809374299426,
+   "sharpe": 0.02838982244037247
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "LSTM: fall risk above normal",
+   "CAGR": 6.057635535384853,
+   "vol": 12.151973191003663,
+   "maxDD": -17.042381691601637,
+   "sharpe": -0.03640268602161152
+  },
+  {
+   "from": "2022-01-01",
+   "strategy": "VIX < 13 or LSTM insurance cheap",
+   "CAGR": 7.671774435123435,
+   "vol": 12.59290662886837,
+   "maxDD": -16.465934060306942,
+   "sharpe": 0.09305035522436281
+  }
+ ],
+ "forecast": [
+  {
+   "window": "2020-2026",
+   "name": "Last month's volatility",
+   "model": "rv_trailing",
+   "days": 1515,
+   "MAE_vol_pts": 5.347769667152955,
+   "RMSE_log": 0.4079250551705251,
+   "bias_vol_pts": -0.1567667464621701,
+   "corr": 0.502248542646759,
+   "R2_vs_VIX": -0.1286091575770855,
+   "DM_t_vs_VIX": -0.7055609442372358
+  },
+  {
+   "window": "2020-2026",
+   "name": "India VIX",
+   "model": "rv_vix",
+   "days": 1515,
+   "MAE_vol_pts": 5.122777205293605,
+   "RMSE_log": 0.3839799927098193,
+   "bias_vol_pts": 2.233338237660513,
+   "corr": 0.6121992820379013,
+   "R2_vs_VIX": 0.0,
+   "DM_t_vs_VIX": NaN
+  },
+  {
+   "window": "2020-2026",
+   "name": "HAR regression",
+   "model": "rv_har",
+   "days": 1515,
+   "MAE_vol_pts": 4.670903104537439,
+   "RMSE_log": 0.3780766840634465,
+   "bias_vol_pts": -0.4644916949871424,
+   "corr": 0.488554183613528,
+   "R2_vs_VIX": 0.0305116413469082,
+   "DM_t_vs_VIX": 0.2479195026308015
+  },
+  {
+   "window": "2020-2026",
+   "name": "HAR + VIX regression",
+   "model": "rv_har_vix",
+   "days": 1190,
+   "MAE_vol_pts": 3.4210604252962766,
+   "RMSE_log": 0.3233408251534142,
+   "bias_vol_pts": 0.2668964087783111,
+   "corr": 0.4987331058674731,
+   "R2_vs_VIX": 0.1610607614725308,
+   "DM_t_vs_VIX": 1.6192840468495768
+  },
+  {
+   "window": "2020-2026",
+   "name": "Gradient boosting (Nifty only)",
+   "model": "rv_lgbm",
+   "days": 1515,
+   "MAE_vol_pts": 4.753029739247888,
+   "RMSE_log": 0.3692566609573982,
+   "bias_vol_pts": -0.4128490363210564,
+   "corr": 0.5635251990442702,
+   "R2_vs_VIX": 0.0752177522496551,
+   "DM_t_vs_VIX": 0.7289755877056996
+  },
+  {
+   "window": "2020-2026",
+   "name": "Gradient boosting (Nifty + VIX)",
+   "model": "rv_lgbm_vix",
+   "days": 1039,
+   "MAE_vol_pts": 3.711952868727949,
+   "RMSE_log": 0.3506039326070406,
+   "bias_vol_pts": -0.2032831887862039,
+   "corr": 0.3440506368864799,
+   "R2_vs_VIX": -0.0667840156551382,
+   "DM_t_vs_VIX": -0.484780255335866
+  },
+  {
+   "window": "2020-2026",
+   "name": "LSTM (Nifty only)",
+   "model": "rv_lstm",
+   "days": 1515,
+   "MAE_vol_pts": 4.523746512671395,
+   "RMSE_log": 0.3654353726115578,
+   "bias_vol_pts": -1.3330156664959234,
+   "corr": 0.4760217564366075,
+   "R2_vs_VIX": 0.0942591115698977,
+   "DM_t_vs_VIX": 0.7374550073577157
+  },
+  {
+   "window": "2022-2026",
+   "name": "Last month's volatility",
+   "model": "rv_trailing",
+   "days": 1028,
+   "MAE_vol_pts": 3.949046630393975,
+   "RMSE_log": 0.3899947032393166,
+   "bias_vol_pts": -0.150929586405319,
+   "corr": 0.34198085885987,
+   "R2_vs_VIX": -0.3085086386609377,
+   "DM_t_vs_VIX": -1.0039360197951537
+  },
+  {
+   "window": "2022-2026",
+   "name": "India VIX",
+   "model": "rv_vix",
+   "days": 1028,
+   "MAE_vol_pts": 3.75343827224823,
+   "RMSE_log": 0.3409340766994489,
+   "bias_vol_pts": 2.1206832184222897,
+   "corr": 0.621627962475347,
+   "R2_vs_VIX": 0.0,
+   "DM_t_vs_VIX": NaN
+  },
+  {
+   "window": "2022-2026",
+   "name": "HAR regression",
+   "model": "rv_har",
+   "days": 1028,
+   "MAE_vol_pts": 3.4451869587146886,
+   "RMSE_log": 0.3394452282905658,
+   "bias_vol_pts": 0.1697526297031186,
+   "corr": 0.4045700068840791,
+   "R2_vs_VIX": 0.0087148667926445,
+   "DM_t_vs_VIX": 0.0487831338475334
+  },
+  {
+   "window": "2022-2026",
+   "name": "HAR + VIX regression",
+   "model": "rv_har_vix",
+   "days": 1028,
+   "MAE_vol_pts": 3.329508497716801,
+   "RMSE_log": 0.3146622381407291,
+   "bias_vol_pts": -0.2150797102336823,
+   "corr": 0.5292493595903521,
+   "R2_vs_VIX": 0.1481788252027024,
+   "DM_t_vs_VIX": 1.3138940281181473
+  },
+  {
+   "window": "2022-2026",
+   "name": "Gradient boosting (Nifty only)",
+   "model": "rv_lgbm",
+   "days": 1028,
+   "MAE_vol_pts": 3.8092630924804265,
+   "RMSE_log": 0.354558474429282,
+   "bias_vol_pts": 0.0495689160687186,
+   "corr": 0.3304451253817301,
+   "R2_vs_VIX": -0.0815209013937678,
+   "DM_t_vs_VIX": -0.506739692287006
+  },
+  {
+   "window": "2022-2026",
+   "name": "Gradient boosting (Nifty + VIX)",
+   "model": "rv_lgbm_vix",
+   "days": 1016,
+   "MAE_vol_pts": 3.764460258087036,
+   "RMSE_log": 0.353926813818759,
+   "bias_vol_pts": -0.2153037581627745,
+   "corr": 0.3403652057719131,
+   "R2_vs_VIX": -0.0711532496442084,
+   "DM_t_vs_VIX": -0.5127770162978685
+  },
+  {
+   "window": "2022-2026",
+   "name": "LSTM (Nifty only)",
+   "model": "rv_lstm",
+   "days": 1028,
+   "MAE_vol_pts": 3.307722558682346,
+   "RMSE_log": 0.3227455523520969,
+   "bias_vol_pts": -0.1784541866910662,
+   "corr": 0.4457321760198392,
+   "R2_vs_VIX": 0.1038520635116609,
+   "DM_t_vs_VIX": 0.6769004494166144
+  }
+ ],
+ "classifier": [
+  {
+   "window": "2020-2026",
+   "name": "Base rate",
+   "model": "dd_base",
+   "days": 1490,
+   "base_rate": 0.1731543624161073,
+   "AUC": 0.4764295781737642,
+   "Brier": 0.1727752998682562,
+   "mean_prob": 0.3432323580764483
+  },
+  {
+   "window": "2020-2026",
+   "name": "Logistic on last month's vol",
+   "model": "dd_logit_rv",
+   "days": 1490,
+   "base_rate": 0.1731543624161073,
+   "AUC": 0.5651773129970805,
+   "Brier": 0.1680267602365966,
+   "mean_prob": 0.3054279783789402
+  },
+  {
+   "window": "2020-2026",
+   "name": "Logistic on India VIX",
+   "model": "dd_logit_vix",
+   "days": 1111,
+   "base_rate": 0.1782178217821782,
+   "AUC": 0.2625958378970427,
+   "Brier": 0.1768263276123982,
+   "mean_prob": 0.2369872066107056
+  },
+  {
+   "window": "2020-2026",
+   "name": "Logistic (all Nifty features)",
+   "model": "dd_logit",
+   "days": 1490,
+   "base_rate": 0.1731543624161073,
+   "AUC": 0.4001434611899728,
+   "Brier": 0.1845467501548502,
+   "mean_prob": 0.308520221542116
+  },
+  {
+   "window": "2020-2026",
+   "name": "Gradient boosting (Nifty only)",
+   "model": "dd_lgbm",
+   "days": 1490,
+   "base_rate": 0.1731543624161073,
+   "AUC": 0.4889320950367462,
+   "Brier": 0.217624546269719,
+   "mean_prob": 0.3261994304398255
+  },
+  {
+   "window": "2020-2026",
+   "name": "Gradient boosting (Nifty + VIX)",
+   "model": "dd_lgbm_vix",
+   "days": 956,
+   "base_rate": 0.1464435146443514,
+   "AUC": 0.2226803221288515,
+   "Brier": 0.28049948822449,
+   "mean_prob": 0.2776377897214975
+  },
+  {
+   "window": "2020-2026",
+   "name": "LSTM (Nifty only)",
+   "model": "dd_lstm",
+   "days": 1490,
+   "base_rate": 0.1731543624161073,
+   "AUC": 0.5022494462901439,
+   "Brier": 0.1753964431073986,
+   "mean_prob": 0.3260631730592491
+  },
+  {
+   "window": "2022-2026",
+   "name": "Base rate",
+   "model": "dd_base",
+   "days": 992,
+   "base_rate": 0.1622983870967742,
+   "AUC": 0.4777227167746709,
+   "Brier": 0.1651857074358241,
+   "mean_prob": 0.3321064547854481
+  },
+  {
+   "window": "2022-2026",
+   "name": "Logistic on last month's vol",
+   "model": "dd_logit_rv",
+   "days": 992,
+   "base_rate": 0.1622983870967742,
+   "AUC": 0.6158261766486535,
+   "Brier": 0.1447570437936204,
+   "mean_prob": 0.270532000628602
+  },
+  {
+   "window": "2022-2026",
+   "name": "Logistic on India VIX",
+   "model": "dd_logit_vix",
+   "days": 986,
+   "base_rate": 0.1622718052738336,
+   "AUC": 0.2293545702179176,
+   "Brier": 0.160219376683982,
+   "mean_prob": 0.2253779240747236
+  },
+  {
+   "window": "2022-2026",
+   "name": "Logistic (all Nifty features)",
+   "model": "dd_logit",
+   "days": 992,
+   "base_rate": 0.1622983870967742,
+   "AUC": 0.5089505273149912,
+   "Brier": 0.15254860774701,
+   "mean_prob": 0.2759465092154973
+  },
+  {
+   "window": "2022-2026",
+   "name": "Gradient boosting (Nifty only)",
+   "model": "dd_lgbm",
+   "days": 992,
+   "base_rate": 0.1622983870967742,
+   "AUC": 0.5583335201919413,
+   "Brier": 0.1713536009045105,
+   "mean_prob": 0.2697177264808312
+  },
+  {
+   "window": "2022-2026",
+   "name": "Gradient boosting (Nifty + VIX)",
+   "model": "dd_lgbm_vix",
+   "days": 956,
+   "base_rate": 0.1464435146443514,
+   "AUC": 0.2226803221288515,
+   "Brier": 0.28049948822449,
+   "mean_prob": 0.2776377897214975
+  },
+  {
+   "window": "2022-2026",
+   "name": "LSTM (Nifty only)",
+   "model": "dd_lstm",
+   "days": 992,
+   "base_rate": 0.1622983870967742,
+   "AUC": 0.5992929270279764,
+   "Brier": 0.1511536747907949,
+   "mean_prob": 0.2880607322309046
+  }
+ ]
+}

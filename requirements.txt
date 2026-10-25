@@ -1,0 +1,7 @@
+# Training pipeline: forecast.py, backtest.py, figures.py (the web app needs only app/requirements.txt)
+pandas>=2.2
+numpy>=2.0
+scikit-learn>=1.5
+lightgbm>=4.3
+torch>=2.3
+matplotlib>=3.9
