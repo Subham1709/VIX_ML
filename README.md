@@ -2,7 +2,9 @@
 
 FDRM course project by **Group 8**, IIT Jodhpur. An extension of our India VIX hedging project ([app](https://subham-fdrm-vix.streamlit.app), [code](https://github.com/Subham1709/FDRM_VIX)).
 
-**Live app:** *(add the Streamlit link here once deployed)*
+[![Live app](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://subham-vix-ml.streamlit.app)
+
+**Live app:** https://subham-vix-ml.streamlit.app
 
 In the main project, a Nifty 50 portfolio bought a 3-month put 5% below the market only when India VIX was below 13, and sold it into volatility spikes. Here we ask whether machine learning (gradient boosting) and deep learning (an LSTM) can do better, in two ways:
 

@@ -56,7 +56,7 @@ o, u = perf.loc["Original rule: buy when VIX < 13"], perf.loc["Unhedged"]
 gb, ls = perf.loc["Gradient boosting: insurance looks cheap"], perf.loc["LSTM: insurance looks cheap"]
 story = [
     P("Machine learning and India VIX: can a model time crash insurance better than VIX?", h1),
-    P("FDRM course project, Group 8, IIT Jodhpur · github.com/Subham1709/VIX_ML", small),
+    P("FDRM course project, Group 8, IIT Jodhpur · github.com/Subham1709/VIX_ML · app: subham-vix-ml.streamlit.app", small),
     Spacer(1, 6),
     P("Question", h2),
     P("Our main project protected a Nifty 50 portfolio with a 3-month put, 5% below the market, bought only when "
